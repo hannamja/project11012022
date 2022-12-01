@@ -1,0 +1,42 @@
+.footer {
+    background: black;
+    width: 100%;
+    color: #fff;
+    hr {
+        margin: auto;
+        width: 90%;
+        background: #fff;
+    }
+    .above {
+        margin: auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    li {
+        list-style: none;
+    }
+    .footer-button {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        color: #fff;
+    }
+}
+.copy-right h5 {
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+}
+.below {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.contact {
+    margin-top: 10px;
+    width: 40%;
+}

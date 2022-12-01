@@ -1,0 +1,199 @@
+.modal-content {
+    height: 500px;
+}
+
+.form-order {
+    .order-header {
+        display: flex;
+        width: 100%;
+    }
+
+    .order-header-right {
+        flex-grow: 6;
+    }
+
+    .img-wrap {
+        width: 200px;
+        height: auto;
+
+    }
+
+    .img-order-item {
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px;
+        border-radius: 20px;
+    }
+
+    .item-name {
+        margin-top: 20px;
+        font-weight: bolder;
+    }
+
+    .item-price {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: chocolate;
+    }
+
+    .change-number {
+        display: flex;
+
+        .add-less {
+            width: 15px;
+            height: 15px;
+            margin: auto 0;
+            background-color: gainsboro;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 5px;
+            font-size: 10px;
+        }
+
+        .add-more {
+            width: 15px;
+            height: 15px;
+            margin: auto 0;
+            background-color: lightgreen;
+            text-align: center;
+            border-radius: 50%;
+            margin-left: 5px;
+            font-size: 10px;
+        }
+
+        .button-price-add {
+            margin-left: 15px;
+            border-radius: 20px;
+            background-color: bisque;
+            padding: 0px 10px;
+        }
+    }
+
+    .cancel {
+        flex-grow: 1;
+    }
+
+    .order-body {
+        width: 95%;
+        margin: 0 auto;
+        overflow: scroll;
+
+        .hotcold,
+        .size-select,
+        .topping-select {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hotcold-area,
+        .size-area {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            justify-content: space-around;
+
+            .cont-radio {
+                position: relative;
+                width: 50%;
+                padding-left: 24px;
+                flex-grow: 1;
+                .checkmark {
+                    background: rgba(0, 0, 0, 0.05);
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 5px;
+                    top: 5px;
+                }
+    
+                .checkmark:after {
+                    content: "";
+                    position: absolute;
+                }
+            }
+
+        }
+
+        .topping-area {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            justify-content: space-around;
+
+            .topping-wrap {
+                display: flex;
+                justify-content: space-between;
+                .cont-radio {
+                    position: relative;
+                    width: 50%;
+                    padding-left: 24px;
+                    flex-grow: 1;
+                    .checkmark {
+                        background: rgba(0, 0, 0, 0.05);
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 5px;
+                        position: absolute;
+                        left: 5px;
+                        top: 5px;
+                    }
+        
+                    .checkmark:after {
+                        content: "";
+                        position: absolute;
+                    }
+                }
+                .topping-price {
+                    padding: 0px 5px;
+                }
+                
+            }
+
+        }
+    }
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 300px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal.fade.show .modal-dialog {
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -webkit-transform: translate3d(0, -300px, 0);
+   transform: translate3d(0, -300px, 0);
+   opacity: 1;
+}
+
+
+@media screen and (max-width: 300px) {
+    .form-order .change-number {
+        flex-wrap: wrap;
+        row-gap: 5px;
+        border: 2px solid black;
+    }
+
+    .button-price-add {
+        flex-grow: 1;
+        margin-left: 0px;
+    }
+}

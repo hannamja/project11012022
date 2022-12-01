@@ -1,0 +1,22 @@
+.download {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    .bannerdownload {
+        width: 100%;
+    }
+    .googleplay-app {
+        position: absolute;
+        width: 150px;
+        right: 10%;
+        bottom: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    i {
+        color: red;
+        font-size: 50px;
+    }
+
+}
